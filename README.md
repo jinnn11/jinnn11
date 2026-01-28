@@ -1,4 +1,6 @@
-## Hi there 👋
+## Swaminathan Sankaran
+🎓 MS Data Science @ University at Buffalo  
+🤖 Machine Learning | Deep Learning | Computer Vision  
 
 <!--
 **jinnn11/jinnn11** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
