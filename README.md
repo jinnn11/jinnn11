@@ -2,28 +2,26 @@
 
 <p align="center">
 MS Data Science @ University at Buffalo<br>
-Machine Learning · Deep Learning · Computer Vision
+Data Science · Machine Learning · LLMs · MLOps · Computer Vision
 </p>
 
 ---
 
 ## Featured Projects
 
+### [US Electricity Demand Forecast Audit](https://github.com/jinnn11/grid-forecast-audit)
+
+Pre-registered audit of 10 years of day-ahead electricity demand forecasts for 50+ US grid operators (6.1M hourly records from EIA-930). Found three errors in EIA's public data, verified against the operators' own records, that made forecast accuracy appear to decline. Once they are corrected, the 10-year trend is flat, and California's 2025 forecast error falls from 8.3% to 2.4%.
+
+`Python` `pandas` `Time Series` `Statistical Testing` `Data Quality`
+
+---
+
 ### [Compositional Grounding Probes](https://github.com/jinnn11/compositional-grounding-probes)
 
 Diagnostic benchmark for testing whether open-vocabulary segmentation models understand compositional prompts such as negation, spatial relations, attribute binding, and fine-grained categories. Built with Grounding DINO and SAM, with 914 human-verified probes across 608 images. Analysis revealed severe grounding failures, including 20.7% negation accuracy and 0/51 spatial pair consistency.
 
 `Python` `PyTorch` `Grounding DINO` `SAM` `Computer Vision` `Vision-Language Models`
-
-
-
----
-
-### [Molecular Similarity Prediction](https://github.com/jinnn11/molecular-similarity-prediction)
-
-Machine learning project for predicting molecular similarity using molecular representations and cheminformatics techniques.
-
-`Python` `RDKit` `Machine Learning`
 
 ---
 
@@ -33,17 +31,24 @@ End-to-end machine learning pipeline focused on model monitoring and data/model 
 
 `Python` `MLflow` `Docker` `FastAPI`
 
-
 ---
-### [CT Image Tamper Detection](https://github.com/jinnn11/ct-tamper-classification)
 
-Deep learning system for detecting manipulated regions in CT scans using patch-level classification.
+### [CT Scan Tamper Classification](https://github.com/jinnn11/ct-tamper-classification)
+
+Two-person team project: PyTorch models that classify 3D lung CT patches as authentic or GAN-tampered (tumors injected or removed), on a public 100-scan dataset. A 3D-to-2D compressor feeding ResNet-18 ranked first of five designs on scans held out of training.
 
 `Python` `PyTorch` `Computer Vision` `Medical Imaging`
 
+---
+
+### [Molecular Similarity Prediction](https://github.com/jinnn11/molecular-similarity-prediction)
+
+Contrastive pretraining of 2D-image, 3D-conformer and fingerprint encoders on 291,742 drug-like molecules (GEOM-Drugs), tested on 200 rated molecule pairs. The averaged embedding similarity reaches a Pearson correlation of 0.90 with no training on the ratings, and the three views turn out largely redundant.
+
+`Python` `PyTorch` `RDKit` `Contrastive Learning`
 
 ---
 
 ### Technical Interests
 
-Computer Vision · Medical Imaging · MLOps · Representation Learning · Vision-Language Models
+LLM Evaluation · Time Series & Forecasting · MLOps · Computer Vision · Vision-Language Models
