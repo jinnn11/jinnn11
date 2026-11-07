@@ -1,8 +1,15 @@
 <h2 align="center">Swaminathan Sankaran</h2>
 
 <p align="center">
-MS Data Science @ University at Buffalo<br>
-Data Science · Machine Learning · LLMs · MLOps · Computer Vision
+MS Data Science @ University at Buffalo · graduating December 2026<br>
+I build ML systems and check whether their results actually hold up.<br>
+Open to data science, ML engineering and AI engineering roles.
+</p>
+
+<p align="center">
+<a href="https://www.swaminathansankaran.com">Website</a> ·
+<a href="https://www.linkedin.com/in/swaminathan-sankaran-02643524b/">LinkedIn</a> ·
+<a href="https://www.swaminathansankaran.com/assets/swaminathan_resume.pdf">Résumé (PDF)</a>
 </p>
 
 ---
@@ -27,9 +34,9 @@ Diagnostic benchmark for testing whether open-vocabulary segmentation models und
 
 ### [Drift-Aware MLOps Pipeline](https://github.com/jinnn11/drift-aware-mlops-pipeline)
 
-End-to-end machine learning pipeline focused on model monitoring and data/model drift detection.
+Predicts term-deposit sign-ups (UCI Bank Marketing) with an XGBoost model served by FastAPI, with every prediction logged to PostgreSQL, drift checks in Evidently, Prometheus and Grafana, and retraining run by Airflow and tracked in MLflow. A retrained model only ships if it gains at least 0.005 PR-AUC on shifted data without losing more than 0.03 ROC-AUC on historical data; in a simulated recession, retraining lifted shifted-data PR-AUC from 0.84 to 0.89.
 
-`Python` `MLflow` `Docker` `FastAPI`
+`Python` `XGBoost` `FastAPI` `PostgreSQL` `Airflow` `MLflow` `Evidently` `Docker`
 
 ---
 
@@ -48,6 +55,10 @@ Contrastive pretraining of 2D-image, 3D-conformer and fingerprint encoders on 29
 `Python` `PyTorch` `RDKit` `Contrastive Learning`
 
 ---
+
+### Currently
+
+An LLM benchmark for pulling revenue, net income and EPS out of earnings press releases, with every answer graded automatically against SEC filings, including my own LoRA fine-tune of Qwen3-8B.
 
 ### Technical Interests
 
