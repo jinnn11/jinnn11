@@ -16,6 +16,14 @@ Open to data science, ML engineering and AI engineering roles.
 
 ## Featured Projects
 
+### [SEC Earnings Extraction: LLM Benchmark, Fine-Tuning and Serving](https://github.com/jinnn11/sec-earnings-bench)
+
+Links about 4,700 SEC earnings releases to the XBRL figures in each company's matching 10-Q/10-K, with an auto-grader that scores LLM-extracted revenue, net income and EPS and classifies every error. Across 9 LLMs, a figure-plus-unit reply format cut open-model errors 65%. A LoRA fine-tune of Qwen3-8B raised accuracy on 37 unseen companies from 89.1% to 99.2% (+10.1 points, 95% CI +5.1 to +15.6); served in FP8 with vLLM on one H100, it reads 6,143 releases an hour at $0.56 per 1,000.
+
+`Python` `PyTorch` `PEFT (LoRA)` `vLLM` `AWQ` `pandas`
+
+---
+
 ### [US Electricity Demand Forecast Audit](https://github.com/jinnn11/grid-forecast-audit)
 
 Pre-registered audit of 10 years of day-ahead electricity demand forecasts for 50+ US grid operators (6.1M hourly records from EIA-930). Found three errors in EIA's public data, verified against the operators' own records, that made forecast accuracy appear to decline. Once they are corrected, the 10-year trend is flat, and California's 2025 forecast error falls from 8.3% to 2.4%.
@@ -55,10 +63,6 @@ Contrastive pretraining of 2D-image, 3D-conformer and fingerprint encoders on 29
 `Python` `PyTorch` `RDKit` `Contrastive Learning`
 
 ---
-
-### Currently
-
-An LLM benchmark for pulling revenue, net income and EPS out of earnings press releases, with every answer graded automatically against SEC filings, including my own LoRA fine-tune of Qwen3-8B.
 
 ### Technical Interests
 
