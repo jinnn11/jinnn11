@@ -1,4 +1,4 @@
-<h2 align="center">Swaminathan Sankaran</h2>
+<h2 align="center">Nathan Sankaran</h2>
 
 <p align="center">
 MS Data Science @ University at Buffalo · graduating December 2026<br>
