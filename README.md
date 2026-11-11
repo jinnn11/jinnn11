@@ -40,11 +40,11 @@ Diagnostic benchmark for testing whether open-vocabulary segmentation models und
 
 ---
 
-### [Drift-Aware MLOps Pipeline](https://github.com/jinnn11/drift-aware-mlops-pipeline)
+### [Drift-Aware Retraining: Experiment and MLOps Pipeline](https://github.com/jinnn11/drift-aware-mlops-pipeline)
 
-Predicts term-deposit sign-ups (UCI Bank Marketing) with an XGBoost model served by FastAPI, with every prediction logged to PostgreSQL, drift checks in Evidently, Prometheus and Grafana, and retraining run by Airflow and tracked in MLflow. A retrained model only ships if it gains at least 0.005 PR-AUC on shifted data without losing more than 0.03 ROC-AUC on historical data; in a simulated recession, retraining lifted shifted-data PR-AUC from 0.84 to 0.89.
+Should a model be retrained when its data drifts, or on a schedule? On 36 months of Lending Club loans replayed month by month with outcomes arriving 1, 3 or 6 months late, monthly retraining won 103 of 105 paired comparisons, while KS and domain-classifier drift tests alarmed in about 35 of 36 months. The rules run in an MLOps pipeline I built: FastAPI serving with every prediction logged to PostgreSQL, Evidently drift checks on the logged predictions, Airflow retraining tracked in MLflow, a promotion gate on held-out data and one-step rollback.
 
-`Python` `XGBoost` `FastAPI` `PostgreSQL` `Airflow` `MLflow` `Evidently` `Docker`
+`Python` `XGBoost` `SciPy` `FastAPI` `PostgreSQL` `Evidently` `Airflow` `MLflow` `Docker`
 
 ---
 
